@@ -1,4 +1,5 @@
 # Assembly__KMA
+# hàm trong ngắt 21h
 - hàm 0Ah -> byte đầu tiên: số lượng kí tự tối đa, byte2:số lượng kí tự thực tế, byte t3 trở đi là chứa kí tự => lea si, string+2 di chuyển trỏ đến vị trí của kí tự đầu tiên của chuỗi
 
 - hàm 01: đọc kí tự (có hiện)được nhập từ bàn phím lên màn hình -> AL=mã ascii của ký tự
