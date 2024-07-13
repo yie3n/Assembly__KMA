@@ -11,19 +11,19 @@
 -hàm 3Ah: xóa thư mục
 
 - hàm 3Ch: tạo file -> DX=offset, CX= thuộc tính của file -> thành công CF=0,AX= file handle
-+ 00h: file bth
-+ 01h: file chỉ đọc
-+ 02h: file ẩn
-+ 04h: file hệ thống
-+ 08h: thuộc tính cho nhãn đĩa
-+ 10h: thuộc tính cho thư mục con
+      + 00h: file bth
+      + 01h: file chỉ đọc
+      + 02h: file ẩn
+      + 04h: file hệ thống
+      + 08h: thuộc tính cho nhãn đĩa
+      + 10h: thuộc tính cho thư mục con
 
 - hàm 3D: mở file, AL = mode, AL=2: read/write
-0: Read-Only (Chỉ đọc)
-1: Write-Only (Chỉ ghi)
-2: Read/Write (Đọc/Ghi)
-3: Chế độ mở tập tin khác (trong một số trường hợp có thể kết hợp với các chế độ chia sẻ)
-4: Chế độ mở tập tin khác (trong một số trường hợp có thể kết hợp với các chế độ chia sẻ)
+      0: Read-Only (Chỉ đọc)
+      1: Write-Only (Chỉ ghi)
+      2: Read/Write (Đọc/Ghi)
+      3: Chế độ mở tập tin khác (trong một số trường hợp có thể kết hợp với các chế độ chia sẻ)
+      4: Chế độ mở tập tin khác (trong một số trường hợp có thể kết hợp với các chế độ chia sẻ)
 
 - hàm 3Eh: đóng file , DS:DX= offset của vùng đệm, CX: số byte cần đọc, BX: thẻ file
 
